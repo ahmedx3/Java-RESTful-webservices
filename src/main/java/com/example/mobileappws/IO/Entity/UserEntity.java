@@ -6,6 +6,7 @@ import org.springframework.web.servlet.FlashMap;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 
 @Entity(name = "users")
@@ -13,6 +14,7 @@ public class UserEntity implements Serializable {
     private static final long serialVersionUID = 1l;
 
     @Id
+    @GeneratedValue
     @Column(nullable = false)
     private long id;
 

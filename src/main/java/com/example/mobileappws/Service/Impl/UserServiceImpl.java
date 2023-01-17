@@ -1,5 +1,7 @@
 package com.example.mobileappws.Service.Impl;
 
+import java.util.UUID;
+
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -20,8 +22,8 @@ public class UserServiceImpl implements UserService {
         UserEntity userEntity = new UserEntity();
         BeanUtils.copyProperties(user, userEntity);
 
-        userEntity.setEncryptedPassword("test");
-        userEntity.setUserId("testUserID");
+        userEntity.setEncryptedPassword("testPass");
+        userEntity.setUserId(UUID.randomUUID().toString());
         UserEntity storedUserDetails = userRepository.save(userEntity);
 
         UserDto returnValue = new UserDto();

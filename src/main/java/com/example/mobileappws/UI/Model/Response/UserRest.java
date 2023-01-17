@@ -1,17 +1,17 @@
 package com.example.mobileappws.UI.Model.Response;
 
 public class UserRest {
-    private String userID;
+    private String userId;
     private String firstName;
     private String lastName;
     private String email;
 
-    public String getUserID() {
-        return this.userID;
+    public String getUserId() {
+        return this.userId;
     }
 
-    public void setUserID(String userID) {
-        this.userID = userID;
+    public void setUserId(String userID) {
+        this.userId = userID;
     }
 
     public String getFirstName() {

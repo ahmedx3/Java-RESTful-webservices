@@ -5,7 +5,7 @@ import java.io.Serializable;
 public class UserDto implements Serializable {
     private static final long serialVersionUID = 1l;
     private long id;
-    private String userID;
+    private String userId;
     private String firstName;
     private String lastName;
     private String email;
@@ -22,12 +22,12 @@ public class UserDto implements Serializable {
         this.id = id;
     }
 
-    public String getUserID() {
-        return this.userID;
+    public String getUserId() {
+        return this.userId;
     }
 
-    public void setUserID(String userID) {
-        this.userID = userID;
+    public void setUserId(String userID) {
+        this.userId = userID;
     }
 
     public String getFirstName() {
